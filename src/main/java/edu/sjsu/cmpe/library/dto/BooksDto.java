@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import edu.sjsu.cmpe.library.domain.Book;
 
 @JsonPropertyOrder(alphabetic = true)
-public class BookDto extends LinksDto {
+public class BooksDto extends LinksDto {
     private Book book;
 
     /**
      * @param book
      */
-    public BookDto(Book book) {
+    public BooksDto(Book book) {
 	super();
 	this.book = book;
     }
